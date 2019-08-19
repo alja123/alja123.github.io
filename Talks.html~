@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Talks</title>   
+ <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+<div id="navbar">
+<ul>
+<li><a href="Main.html">About</a></li>
+<li><a href="cv.pdf">CV</a></li>
+<li><a href="Research.html">Research</a></li>
+<li><a href="Publications.html">Publications</a></li>
+<li><a href="Teaching.html">Teaching</a></li>
+<li><a class="active" href="Talks.html">Talks</a></li>
+</ul>
+</div>
+
+<h3>Conference talks</h3>
+
+    <ul>
+
+	<li>
+	<a href="CyclesPresentation.pdf">Partitioning a graph into a cycle and a sparse graph</a><br>
+	SIAM Discrete Mathematics Conference, Atlanta, 06/06/2016.
+	</li>  
+
+	<li>
+	<a href="RamseyGoodnessPresentation.pdf">Ramsey goodness of paths</a><br>
+	British Mathematical Colloquium, Bristol, 22/03/2016.
+	</li>  
+
+
+	<li>
+	<a href="RainbowConnectednessPresentation.pdf">Rainbow Matchings and Rainbow Connectedness</a><br>
+	Workshop on Extremal and Probabilistic Combinatorics, Birmingham, 22/09/2015.
+	</li>  
+
+	<li>
+	<a href="RainbowConnectednessPresentation.pdf">Rainbow Matchings and Rainbow Connectedness</a><br>
+	Eurocomb 2015, Bergen, 01/09/2015.
+	</li>  
+
+	<li>
+	<a href="RainbowConnectednessPresentation.pdf">Rainbow Matchings and Rainbow Connectedness</a><br>
+	Random Structures and Algorithms, Pittsburgh, 30/07/2015.
+	</li>  
+
+    	<li>
+	<a href="HamiltonianPresentationLSE.pdf">Connectedness in tournaments</a><br>
+	2015 Colloquia in Combinatorics, London, 14/05/2015.
+	</li>  
+
+    	<li>
+	<a href="VoronoiPresentation.pdf">Advantage in the discrete Voronoi game</a><br>
+	Joint Free University of Berlin - Tel Aviv University Workshop on Positional Games and Extremal Combinatorics, Tel Aviv, 04/03/2015.
+	</li>  
+
+   	  <li>
+	<a href="LinkingPresentation.pdf">Connectedness in Tournaments</a><br>
+	Polish Combinatorial Conference, Bedlewo, 25/09/2014.
+	</li>  
+
+        <li>
+	<a href="MMSPresentation.pdf">Nonnegative sums in a set of numbers</a><br>
+	Summit 240 Conference, Budapest, 08/07/2014.
+	</li>  
+
+    	<li>
+	<a href="RamseyPresentation.pdf">Calculating Ramsey numbers by partitioning coloured graphs</a><br>
+	Annual Berlin-Pozna\'n Seminar, Hamburg, 23/05/2014.
+	</li>  
+
+   	<li>
+	<a href="CyclesPresentation.pdf">Partitioning 3-coloured complete graphs into three monochromatic paths</a><br>
+	Methods for Discrete Structures, Berlin, 04/11/2013.
+	</li> 
+
+  	<li>
+	<a href="CyclesPresentation.pdf">Covering coloured graphs by paths and cycles</a><br>
+	Cambridge University Combinatorics Group, Cambridge, 18/10/2012.
+	</li>  
+
+
+	<li>
+	<a href="CyclesPresentation.pdf">Covering coloured graphs by paths and cycles</a><br>
+	Eurocomb Conference, Budapest, 29/08/2011.
+	</li>  
+
+	<li>
+	<a href="CyclesPresentation.pdf">Partitioning 3-coloured complete graphs into 3 monochromatic~paths</a><br>
+	Lisboa Combinatorics Conference, Lisbon, 15/07/2011.
+	</li>  
+
+	<li>
+	<a href="">Growth of graph powers</a><br>
+	French Combinatorics Conference, Paris, 28/06/2010.
+	</li>  
+
+	<li>
+	<a href="">Growth of graph powers</a><br>
+	UCL Combinatorics Group, London, 17/11/2010.
+	</li>  
+</ul>
+</body>
+</html>

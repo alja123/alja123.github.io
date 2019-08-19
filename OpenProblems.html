@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Open Problems</title>   
+ <link rel="stylesheet" href="Style.css">
+
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+</head>
+
+<body class="dark_grid">
+
+
+  
+<div id="navbar">
+<ul>
+<li>&nbsp;<img src="CounterexampleWhite.svg" height="70">&nbsp;&nbsp;</li>
+<li><a href="index.html">About</a></li>
+<li><a href="cv.pdf">CV</a></li>
+<li><a href="Publications.html">Publications</a></li>
+<li><a href="Talks.html">Talks</a></li>
+<li><a href="Research.html">Research</a></li>
+<li><a href="Teaching.html">Teaching</a></li>
+<li><a class="active" href="OpenProblems.html">Open Problems</a></li>
+<li style="float:right"><img src="bbkblack.svg" height="70">
+</li>
+</ul>
+</div>
+
+<div class="center">
+<h3> 
+<span style="background-color: #FFFFFF;">
+&nbsp;&nbsp;&nbsp;I have posed the following open problems throughout my research. &nbsp;&nbsp;
+</span>
+</h3>
+</div>
+
+
+<div class="transparent_gap">
+<h3>Linkedness and connectedness in tournaments</h3>
+<p>
+A directed graph is said to be \(k\)-linked if for any two ordered sets of vertices \((x_1, ..., x_k)\) and \((y_1, ..., y_k)\) there are disjoint paths joining \(x_i\) to \(y_i\) for all \(i\). In a directed graph \(D\), \(\delta^-(D)\) and \(\delta^+(d)\) denote the minimum in-degree and out-degree of vertices in \(D\). A directed graph is strongly connected it for any two vertices \(x\) and \(y\), there is a directed path from \(x\) to \(y\), and strongly \(k\)-connected if it remains strongly connected after deleting any \(k-1\) vertices.
+</p>
+<div class="problem">
+<p>
+<b>Conjecture:</b> For every \(k\), there is a \(d=d(k)\) such that the following holds. 
+Every strongly \(2k\)-connected tournament with \(\delta^-(T), \delta^+(T)\geq d\) is \(k\)-linked.
+</p>
+</div>
+<p>
+It is <a href="http://www.sciencedirect.com/science/article/pii/S009589561500060X">known</a> that every \(452\)-connected tournament is \(k\)-linked. If the above conjecture is true then the "\(2k\)" bound on the connectedness would be tight.
+</p>
+<p>
+One motivation for the above conjecture is a <a href="http://link.springer.com/article/10.1007/BF01261316">related result</a> of Bollob&aacute;s and Tomason about undirected graphs which says that every \(2k\)-connected graph which is sufficiently dense is \(k\)-linked. 
+Thus the above conjecture could be seen as asking for an analogue of this result for tournaments but with a minimum degree condition instead of an average degree condition.
+</p>
+
+<a href="http://www.sciencedirect.com/science/article/pii/S009589561500060X"><i>Highly linked tournaments</i>,
+	A. Pokrovskiy,
+	J. Combin. Theory Ser. B., 115 (2015) 339&ndash;347.</a>
+</div>
+
+
+
+
+<div class="transparent_gap">
+<h3>The 3/4, 2/3, 1/2 Conjectures</h3>
+<div class="problem">
+<p>
+<b>Conjecture:</b> Let \(G\) be a \(2\)-edge-coloured graph with minimum degree \(\delta(G)\).
+</p>
+<ol>
+<li>
+If \(\delta(G)> \frac{3}{4}|G|\), then the vertices of \(G\) can be covered by \(2\) vertex-disjoint monochromatic cycles.
+</li>
+<li>
+If \(\delta(G)> \frac{2}{3}|G|\), then the vertices of \(G\) can be covered by \(3\) vertex-disjoint monochromatic cycles.
+</li>
+<li>
+If \(\delta(G)> \frac{1}{2}|G|\), then the vertices of \(G\) can be covered by \(4\) vertex-disjoint monochromatic cycles.
+</li>
+</ol>
+</div>
+<p>
+The first part of the above conjecture is a separate conjecture of Balogh, Bar&aacute;t, Gerbner, Gy&aacute;rf&aacute;s,  S&aacute;rk&ouml;zy.  It has been solved by Letzter (after previously being proved in approximate forms by Balogh, Bar&aacute;t, Gerbner, Gy&aacute;rf&aacute;s,  S&aacute;rk&ouml;zy and by DeBiasio and Nelsen.) 
+<br>
+</p>
+<a href="http://arxiv.org/pdf/1607.03348.pdf"><i>Partitioning a graph into a cycle and a sparse graph</i>, A. Pokrovskiy, 	arXiv:1607.03348</a>
+</div>
+
+
+
+
+
+
+
+
+<div class="transparent_gap">
+<h3>Cycle lengths in degree 3 critical graphs</h3>
+<div class="problem">
+<p>
+<b>Conjecture:</b> There is a constant \(\alpha>0\) and a function \(C(n)\) tending to infinity such that the following holds.
+Let \(G\) be a graph on \(n\) vertices with \(2n-2\) edges and no proper induced subgraphs of minimum degree \(3\).
+Then \(G\) contains cycles of  at least   \(\alpha C(n)\)  distinct lengths between \(0\) and \(C(n)\).
+</p>
+</div>
+<p>
+Erd&#x0151;s, Faudree, Gy&aacute;rf&aacute;s, and Schelp conjectured that the above should hold with \(\alpha=1\). Together with Narins and Szab&oacute; we <a href="http://arxiv.org/abs/1408.5289">disproved</a> this.
+</p>
+
+
+<div class="problem">
+<p>
+<b>Conjecture:</b> Let \(G\) be a graph on \(n\) vertices with \(2n-2\) edges and no proper induced subgraphs of minimum degree \(3\).
+Then \(G\) contains cycles of  at least \(3\log_2 n + O(1)\) distinct lengths.
+</p>
+</div>
+
+<p>
+This is a variant of the Erd&#x0151;s-Faudree-Gy&aacute;rf&aacute;s-Schelp problem where one looks for many (not necessarily shory) cycle lengths.
+</p>
+<a href="http://arxiv.org/abs/1408.5289"><i>Graphs without proper subgraphs of minimum degree 3 and short cycles</i>,
+	L. Narins, A. Pokrovskiy, T. Szab&oacute;,
+	Combinatorica, (2016).</a>
+</div>
+
+
+
+
+<div class="transparent_gap">
+<h3>Leaf to leaf path lengths in 1-3 trees</h3>
+<div class="problem">
+<p>
+<b>Conjecture:</b> There is a constant \(\alpha>0\) and a function \(C(n)\) tending to infinity such that the following holds.
+Let \(T\) be an \(n\) vertex tree all of whose degrees equal to \(1\) or \(3\).
+Then \(T\) contains  at least \(\alpha C(n)\) of distinct leaf-to-leaf path lengths between \(0\) and \(C(n)\).
+</p>
+</div>
+
+
+<div class="problem">
+<p>
+<b>Conjecture:</b> Let \(T\) be a tree with \(n\) vertices and all degrees equal to \(1\) or \(3\). 
+Then \(T\) has  leaf-to-leaf paths of at least \(\log_2 n\) distinct lengths.
+</p>
+</div>
+
+<p>
+These two conjectures arose during our <a href="http://arxiv.org/abs/1408.5289">study</a> of cycle lengths in degree 3 critical graphs. 
+They are strictly weaker that the two conjectures in the "cycle lengths in degree 3 critical graphs" section.
+</p>
+
+<a href="http://arxiv.org/abs/1408.5289"><i>Graphs without proper subgraphs of minimum degree 3 and short cycles</i>,
+	L. Narins, A. Pokrovskiy, T. Szab&oacute;,
+	Combinatorica, (2016).</a>
+</div>
+
+
+
+
+
+
+
+<div class="transparent_gap">
+<h3>Partitioning a graph into a cycle and an Ore graph</h3>
+<div class="problem">
+<p>
+<b>Conjecture:</b> Every graph \(G\) has a cycle \(C\) such that for any adjacent vertices \(u,v\not\in C\)  we have \(d_{G\setminus C}(u)+d_{G\setminus C}(v)\leq |G\setminus C|-2\).
+</p>
+</div>
+<p>
+The motivation for the above conjecture is that it would give an alternative proof of Lehel's Conjecture&mdash;that the vertices of every graph \(G\) can be partitioned into a cycle in \(G\) and a cycle in the complement of \(G\). Lehel's Conjecture was proved by Bessy and Thomass&eacute; after previously being proved for large graphs by &#0321;uczak, R&ouml;dl, and Szemer&eacute;di, and by Allen.
+</p>
+
+<p>
+A related result is <a href="http://arxiv.org/abs/1607.03348">true</a>&mdash;every graph \(G\) has a cycle \(C\) such that \(\Delta(G[V(G)\setminus V(C))]\leq \frac{1}{2}(|V(G)\setminus V(C)|-1)\). This shows that the weakening of the above conjecture where one replaces "-2" by "-1" is true.
+</p>
+<a href="http://arxiv.org/abs/1607.03348"><i>Partitioning a graph into a cycle and a sparse graph</i>, A. Pokrovskiy, arXiv:1607.03348</a>
+</div>
+
+
+
+
+<div class="transparent_gap">
+<h3>The MMS Property</h3>
+<p>
+A \(d\)-regular hypergraph \(\mathcal{H}\) with vertex set \([n]\) has the MMS property if for any \(n\) real numbers \(x_1, \dots, x_n\) satisfying \(x_1 + \dots + x_n \geq 0\), there are \(d\) edges \(A\in \mathcal H\) satisfying \(\sum_{a\in A} a\geq 0\).
+</p>
+<div class="problem">
+<p>
+<b>Problem:</b> Classify all hypergraphs with the MMS property.
+</p>
+</div>
+
+<p>
+The motivation for the above problem is the Manickam-Mikl&oacute;s-Singhi Conjecture which is equivalent to the statement that for \(n\geq 4k\) the complete \(k\)-uniform \(n\)-vertex hypergraph has the MMS property. Thus a full solution to the above problem would be a big generalization of the Manickam-Mikl&oacute;s-Singhi Conjecture. Because of this, I consider the above problem to be very hard and would be interested in any large family of hypergraphs with the MMS property. One such family was found by Sudakov and Huang who <a href="://emis.muni.cz/journals/EJC/ojs/index.php/eljc/article/view/v21i3p7">proved<a> that all sufficiently large hypergraphs with equal codegrees have the MMS property.
+</p>
+<div class="problem">
+<p>
+<b>Problem:</b> Classify all (2-uniform) graphs with the MMS property.
+</p>
+</div>
+
+
+<a href="http://www.sciencedirect.com/science/article/pii/S0097316515000084"><i>A linear bound on the Manickam-Mikl&oacutes-Singhi Conjecture</i>,
+	A. Pokrovskiy,
+	J. Combin. Theory Ser. A, 2015.</a>
+</div>
+
+
+
+<div class="transparent_gap">
+<h3>Draws in strong Ramsey games</h3>
+<p>
+For an \(r\)-uniform hypergraph \(\mathcal H\), the strong Ramsey game, \(\mathcal{R}(\mathcal H, \infty)\), is a 2-player game played on the edges of the countably infinite \(r\)-uniform complete graph \(\mathcal K^r_{\infty}\). The two players alternate picking free edges of \(\mathcal K^r_{\infty}\).
+The first player to claim a copy of \(\mathcal H\) is the winner. If neither player can win (after any finite number of moves), then the game is declared to be a draw.
+</p>
+<div class="problem">
+<p>
+<b>Question:</b> Is there a (\(2\)-uniform) graph \(G\) such that \(\mathcal{R}(G, \infty)\) is a draw?
+</p>
+</div>
+
+<div class="problem">
+<p>
+<b>Question:</b> For all \(\delta\geq 3\), is there an \(r\)-uniform hypergraph \(\mathcal{H}\) with minimum degree \(\delta\) such that  \(\mathcal{R}(\mathcal{H}, \infty)\) is a draw?  
+</p>
+</div>
+
+<p>
+It is <a href="http://arxiv.org/pdf/1605.05443.pdf">known</a> that there is a \(5\)-uniform hypergraph \(\mathcal H\) for which the strong Ramsey game \(\mathcal{R}(\mathcal H, \infty)\) ends in a draw. However the presence of a degree \(2\) vertex is cruicial to the drawing strategy, which leads to the above problem. 
+</p>
+<p>
+This area is motivated by a problem of Beck  that \(\mathcal{R}(K_n, \infty)\) is a first player win for every complete graph \(K_n\).
+</p>
+
+<a href="http://arxiv.org/pdf/1605.05443.pdf"><i>Strong Ramsey Games: Drawing on an infinite board</i>,
+	D. Hefetz, C. Kusch, L. Narins, A. Pokrovskiy, C. Requil&eacute;, A. Sarid, arXiv:1605.05443</a>
+</div>
+
+
+
+<div class="transparent_gap">
+<h3>An approximate Erd&#x0151;s-Gy&aacute;rf&aacute;s-Pyber Conjecture</h3>
+
+<div class="problem">
+<p>
+<b>Conjecture:</b> For each \(r\) there is a constant \(c_r\), such that in every \(r\)-edge coloured complete graph \(K_n\), there are \(r\) vertex-disjoint monochromatic cycles covering \(n - c_r\) vertices in \(K_n\).  
+</p>
+</div>
+
+<a href="http://www.sciencedirect.com/science/article/pii/S0095895614000045"><i>Partitioning edge-coloured complete graphs into monochromatic cycles and paths</i>,
+	A. Pokrovskiy, 
+	J. Combin. Theory Ser. B., 106 (2014), 70&ndash;97.</a>
+
+<p>
+The Erd&#x0151;s-Gy&aacute;rf&aacute;s-Pyber Conjecture states that the above conjecture should be true with \(c_r=0\). Sadly, for \(r\geq3\), this was <a href="http://www.sciencedirect.com/science/article/pii/S0095895614000045">disproved</a> which shows that \(c_r\geq 1\) for \(r\geq3\). 
+</p>
+
+<p>
+For \(r=2\), the above conjecture is true with \(c_r=0\) (this was proved  by &#321;uczak, R&ouml;dl, and Szemer&eacute;di for large \(n\); by Allen  for smaller but still large \(n\), and by Bessy and Thomass&eacute; for all \(n\).)
+
+For \(r=3\), the above conjecture was solved independently by Letzter and  by me. My proof gives \(c_3\leq 43000\) for sufficiently large \(n\) and Letzter's proof gives \(c_3\leq 60\) for sufficiently large \(n\).  I conjecture that \(c_3=1\).
+</p>
+
+<p>
+<b>Conjecture:</b> Every \(3\)-edge coloured complete graph \(K_n\), has \(3\) vertex-disjoint monochromatic cycles covering \(n - 1\) vertices.  
+</p>
+
+<a href="http://arxiv.org/pdf/1607.03348.pdf"><i>Partitioning a graph into a cycle and a sparse graph</i>, A. Pokrovskiy, 	arXiv:1607.03348</a>
+</div>
+
+
+
+
+
+
+
+<div class="transparent_gap">
+<h3>Partitioning complete bipartite graphs into  monochromatic paths</h3>
+
+<div class="problem">
+<p>
+<b>Conjecture:</b> Suppose that the edges of \(K_{n,n}\) are coloured with \(r\) colours.  There is a vertex-partition of \(K_{n,n}\) into \(2r-1\)  monochromatic paths.  
+</p>
+</div>
+
+<p>
+The \(r=2\) case of this conjecture is a <a href="http://www.renyi.hu/~gyarfas/Cikkek/04_GyarfasLehel_ARamseyTypeProblemInDirectedAndBipartiteGraphs.pdf">classic result</a> of Gy&aacute;rf&aacute;s and Lehel. 
+For \(r=3\), an approximate version was <a href="https://arxiv.org/abs/1510.00060">proved</a> by  Lang,  Schaudt, and  Stein&mdash;they showed that it is always possible to cover \(2n-o(n)\) vertices of a \(3\)-edge-coloured \(K_{n,n}\) by 5 monochomatic cycles.
+</p>
+
+<a href="http://www.sciencedirect.com/science/article/pii/S0095895614000045"><i>Partitioning edge-coloured complete graphs into monochromatic cycles and paths</i>,
+	A. Pokrovskiy, 
+	J. Combin. Theory Ser. B., 106 (2014), 70&ndash;97.</a>
+</div>
+
+
+<div class="center">
+<h3> 
+<span style="background-color: #FFFFFF;">
+&nbsp;&nbsp;&nbsp;The following problems I posed have been solved. &nbsp;&nbsp;
+</span>
+</h3>
+</div>
+
+<div class="lighter">
+<h3>Nearly-extremal constructions for Ryser's Conjecture</h3>
+The vertex cover number of a hypergraph \(\mathcal H\), denoted \(\tau(\mathcal H)\) is the order of the smallest set of vertices \(C\) such that every edge of \(\mathcal H\) contains some vertex of \(C\). A hypergraph is \(r\)-partite if it's vertices can be partitioned into \(r\) sets such that every edge has only one vertex in each set. A hypergraph is intersecting if every two edges intersect. 
+<div class="problem">
+<p>
+<b>Problem:</b> For some fixed constant \(c\) and every \(r\) construct an \(r\)-uniform \(r\)-partite intersecting hypergraph with \(\tau(\mathcal{H})=r-c\).
+</p>
+</div>
+<p>
+This has been <a href="https://arxiv.org/abs/1609.05458">solved</a> by  Haxell and  Scott with the very good constant \(c=4\).
+The motivation for this problem comes from Ryser's Conjecture a special case of which is that every  \(r\)-uniform \(r\)-partite intersecting has \(\tau(\mathcal{H})\leq r-1\). Thus the above problem asks for hypergraphs which are close to extremal for Ryser's Conjecture. The next step in this area is to construct \(r\)-uniform \(r\)-partite intersecting hypergraph with \(\tau(\mathcal{H})=r-1\) for every \(r\).
+</p>
+<a href="http://arxiv.org/abs/1605.06361"><i>A family of extremal hypergraphs for Ryser's conjecture</i>,
+	A. Abu-Khazneh, J. Bar&aacute;t, A. Pokrovskiy, T. Szab&oacute;,
+	arXiv:1605.06361</a>
+
+
+</div>
+
+
+<div class="lighter">
+<h3>Edge growth in graph cubes</h3>
+<p>
+For a graph \(G\), the cube of \(G\), denoted \(G^3\) is the graph on \(V(G)\) formed by joining any two vertices within distance \(3\) on \(G\) by an edge.
+</p>
+<div class="problem">
+<p>
+<b>Conjecture:</b> For any \(d\)-regular graph \(G\) \(e(G^3)\geq 2e(G)\).
+</p>
+</div>
+<p>
+This was <a href="https://arxiv.org/abs/1009.0343">disproved</a> by  DeVos and  Thomass&eacute;. In the same paper they showed that the minimum of the ratio \(\frac{e(G^3)}{e(G)}\)  for \(n\)-vertex, \(d\)-regular graphs \(G\) is \(\frac{7}{4}-o(1)\). This solved the underlying problem which motivated the above conjecture.
+</p>
+<a href="https://arxiv.org/pdf/1005.2542v1.pdf"><i>Growth in graph powers</i>,
+	 A. Pokrovskiy,
+	arXiv:1005.2542v1</a>
+
+</div>
+
+<div class="lighter">
+<h3>Partitioning 2-coloured balanced complete tripartite graphs by monochromatic paths</h3>
+<p>
+A balanced complete \(k\)-partite graph is a graph whose vertex set is partitioned into \(k\) sets \(V_1, \dots, V_k\) of equal sizes with \(xy\) an edge whenever \(x\in V_i\) and \(y\in V_j\) for \(i\neq j\).
+</p>
+<div class="problem">
+<p>
+<b>Conjecture:</b> The vertices of every balanced complete \(3\)-partite graph can be covered by \(2\) vertex-disjoint monochromatic paths.
+</p>
+</div>
+<p>
+This has been proved by  Schaudt and  Stein in their paper <a href="http://www.dim.uchile.cl/~mstein/Paths2ColMultipart.pdf">"Partitioning two-coloured complete multipartite graphs into monochromatic paths"</a>.
+</p>
+<a href="Slides/RamseyPresentation.pdf"><i>Calculating Ramsey numbers by partitioning coloured graphs</i>,
+	Annual Berlin-Pozna&nacute; Seminar, Hamburg, 23/05/2014.</a>
+
+
+</div>
+
+
+
+<hr>
+
+</body>
+</html>

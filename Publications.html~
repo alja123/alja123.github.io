@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Publications</title>   
+ <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+<div id="navbar">
+<ul>
+<li><a href="Main.html">About</a></li>
+<li><a href="cv.pdf">CV</a></li>
+<li><a href="Research.html">Research</a></li>
+<li><a class="active" href="Publications.html">Publications</a></li>
+<li><a href="Teaching.html">Teaching</a></li>
+<li><a href="Talks.html">Talks</a></li>
+</ul>
+</div>
+
+<div id="PublicationsList">
+<h3>Submitted</h3>
+    <ul>
+	<li>
+	<a href="http://arxiv.org/pdf/1607.03348.pdf">Partitioning a graph into a cycle and a sparse graph</a><br>
+	A. Pokrovskiy<br>
+	arXiv:1607.03348
+	</li>  
+
+ 	<li>
+	<a href="http://arxiv.org/pdf/1605.06361.pdf">A family of extremal hypergraphs for Ryser's conjecture</a><br>
+	A. Abu-Khazneh, J. Bar&aacute;t, A. Pokrovskiy, T. Szab&oacute;<br>
+	arXiv:1605.06361
+	</li>  
+
+	<li>
+	<a href="http://arxiv.org/pdf/1605.05443.pdf">Strong Ramsey Games: Drawing on an infinite board</a><br>
+	D. Hefetz, C. Kusch, L. Narins, A. Pokrovskiy, C. Requil&eacute;, A. Sarid<br>
+	arXiv:1605.05443
+	</li>  
+
+      <li>
+	<a href="http://arxiv.org/pdf/1409.4938.pdf">Intersecting extremal constructions in Ryser's Conjecture for r-partite hypergraphs</a><br>
+	A. Abu-Khazneh, A. Pokrovskiy<br>
+	arXiv:1608.07028
+	</li>  
+
+ 
+
+	<li>
+	<a href="http://arxiv.org/pdf/1504.05373.pdf">Rainbow matchings and rainbow connectedness</a><br>
+	A. Pokrovskiy<br>
+	arXiv:1504.05373
+	</li>  
+
+
+
+
+
+
+
+</ul>
+
+
+<h3>To appear</h3>
+ <ul>
+
+       <li>
+	<a href="http://arxiv.org/abs/1608.07028">Random subgraphs of properly edge-coloured complete graphs and long rainbow cycles</a><br>
+	N. Alon, A. Pokrovskiy, B. Sudakov<br>
+	Israel Journal of Mathematics, (2016).
+	</li>
+
+	<li>
+	<a href="http://imrn.oxfordjournals.org/content/early/2016/04/09/imrn.rnw009">Edge disjoint Hamiltonian cycles in highly connected tournaments</a><br>
+	A. Pokrovskiy<br>
+	Elecron. Math. Res. Notices, (2016).
+	</li>
+
+
+	<li>
+	<a href="http://www.sciencedirect.com/science/article/pii/S0095895616300454">Ramsey goodness of paths</a><br>
+	 A. Pokrovskiy, B. Sudakov<br>
+	J. Combin. Theory Ser. B., (2016).
+	</li>  
+
+	<li>
+	<a href="http://www.sciencedirect.com/science/article/pii/S0095895616300314">On sets not belonging to algebras and rainbow matchings in graphs</a><br>
+	D. Clemens, J. Ehrenm&#252;ller, A. Pokrovskiy<br>
+	J. Combin. Theory Ser. B., (2016).
+	</li>  
+
+        <li>
+	<a href="http://onlinelibrary.wiley.com/doi/10.1002/jgt.22036/full">Calculating Ramsey numbers by partitioning coloured graphs</a><br>
+	A. Pokrovskiy<br>
+	J. Graph Theory, (2016).
+	</li>
+
+
+        <li>
+	<a href="http://arxiv.org/abs/1408.5289">Graphs without proper subgraphs of minimum degree 3 and short cycles</a><br>
+	L. Narins, A. Pokrovskiy, T. Szab&oacute;<br>
+	Combinatorica, (2016).
+	</li>
+
+
+</ul>
+
+
+
+<h3>Published</h3>
+ <ul>
+
+        <li>
+	<a href="http://www.sciencedirect.com/science/article/pii/S009589561500060X">Highly linked tournaments</a><br>
+	A. Pokrovskiy<br>
+	J. Combin. Theory Ser. B., 115 (2015) 339 -- 347.
+	</li>  
+
+        <li>
+	<a href="http://www.sciencedirect.com/science/article/pii/S0166218X15001675">Identifying codes and searching with balls in graphs</a><br>
+	Y. Kim, M. Kumbhat, Z. Nagy, B. Patk&oacutes, A. Pokrovskiy, M. Vizer<br>
+	Discrete Appl. Math., 193 (2015) 39 -- 47.
+	</li>
+
+
+        <li>
+	<a href="http://www.sciencedirect.com/science/article/pii/S0097316515000084">A linear bound on the Manickam-Mikl&oacutes-Singhi Conjecture</a><br>
+	A. Pokrovskiy<br>
+	J. Combin. Theory Ser. A, 2015.
+	</li>  
+
+        <li>
+	<a href="http://arxiv.org/pdf/1303.0523v1.pdf">Advantage in the discrete Voronoi game</a><br>
+	D. Gerbner,  V. M&eacutesz&aacuteros, D. P&aacutelv&oumllgyi, A. Pokrovskiy, G. Rote<br>
+	J. Graph Algorithms Appl., 18 (2014) 439 -- 457.
+	</li>  
+
+        <li>
+	<a href="http://www.sciencedirect.com/science/article/pii/S0095895614000045">Partitioning edge-coloured complete graphs into monochromatic cycles and paths</a><br>
+	A. Pokrovskiy<br>
+	J. Combin. Theory Ser. B., 106 (2014), 70--97.
+	</li>  
+
+        <li>
+	<a href="http://ajc.maths.uq.edu.au/pdf/58/ajc_v58_p347.pdf">Edge growth in graph powers</a><br>
+	A. Pokrovskiy<br>
+	Australas. J. Combin., 58 (2014), 347--357.
+	</li>  
+
+        <li>
+	<a href="http://www.combinatorics.org/ojs/index.php/eljc/article/view/v18i1p88/pdf">Growth of graph powers</a><br>
+	A. Pokrovskiy<br>
+	Electron. J. Combin., 18 (2011).
+	</li>  
+
+  <!--      <li>
+	<a href="http://www.sciencedirect.com/science/article/pii/S1571065311001867">Partitioning 3-coloured complete graphs into three  monochromatic  paths</a><br>
+	A. Pokrovskiy<br>
+	Electron. Notes Discrete Math., 38 (2011), 717-722.
+	</li>  -->
+
+  <!--        <li>
+	<a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1467-999X.2011.04140.x/abstract">Periodic sequences of arbitrage: a tale of four currencies</a><br>
+	R. Cross, V. Kozyakin, B. O'Callaghan, A. Pokrovskii, A. Pokrovskiy<br>
+	Metroeconomica, 63 (2011), 250-294.
+	</li>  
+
+
+      <li>
+	<a href="http://arxiv.org/pdf/0910.0369v2.pdf">Locally homogeneous structures on Hopf surfaces</a><br>
+	B. McKay, A Pokrovskiy<br>
+	Indiana Univ. Math. J., 59 (2010), 1491-1540.
+	</li>  
+
+      <li>
+	<a href="http://www.sciencedirect.com/science/article/pii/S0022039609003611">A corollary of the Poincar&eacute-Bendixson theorem and periodic canards</a><br>
+	A. Pokrovskii, A. Pokrovskiy, A. Zhezherun<br>
+	J. Differential Equations., 247 (2009), 3283-3294.
+	</li>  
+
+      <li>
+	<a href="http://iopscience.iop.org/1742-6596/138/1/012001/pdf/1742-6596_138_1_012001.pdf">Complex networks based on discrete-mode lasers</a><br>
+	A. Amann, S. Osborne, S. O'Brien, A. Pokrovskiy<br>
+	J. Phys.: Conf. Ser., 138 (2008), 3283-3294.
+	</li>  -->
+</ul>
+<hr>
+</div>
+</body>
+</html>

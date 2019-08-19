@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Research</title>   
+ <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+<div id="navbar">
+<ul>
+<li><a href="Main.html">About</a></li>
+<li><a href="cv.pdf">CV</a></li>
+<li><a class="active" href="Research.html">Research</a></li>
+<li><a href="Publications.html">Publications</a></li>
+<li><a href="Teaching.html">Teaching</a></li>
+<li><a href="Talks.html">Talks</a></li>
+</ul>
+</div>
+
+<h3>Research interests</h3>
+
+    <ul>
+
+	<li>
+	<a href="#RainbowStructures">Rainbow structures</a>
+	</li>  
+
+	<li>
+	<a href="#RamseyTheory">Ramsey theory</a>
+	</li>  
+
+	<li>
+	<a href="#PositionalGames">Positional games</a>
+	</li>  
+
+	<li>
+	<a href="CyclesPresentation.pdf">Monochromatic partitioning</a>
+	</li>  
+
+	<li>
+	<a href="CyclesPresentation.pdf">Connectedness in tournaments</a>
+	</li>  
+
+	<li>
+	<a href="CyclesPresentation.pdf">Nonnegative sums</a>
+	</li>  
+
+	<li>
+	<a href="CyclesPresentation.pdf">Hypergraph matchings</a>
+	</li>  
+
+	
+	<li>
+	<a href="CyclesPresentation.pdf">Extremal combinatorics</a>
+	</li>  
+
+</ul>
+<hr>
+<a name="RainbowStructures"></a> 
+<h3>Rainbow Structures</h3>
+
+<p>
+My recent research has been about Latin squares. These are classic objects introduced in the 18th century by Euler.
+A Latin square is an $$n \times n$$ array of symbols with no symbol appearing twice in the same row or column. 
+Since Euler introduced them,  Latin squares have remained a very active area of research, due to their many applications to other areas of mathematics, such as group theory, coding theory, and the design of experiments. 
+They are also familiar to the layperson in the form of Sudoku puzzles, which when completed become Latin squares.
+</p>
+
+<p>
+I have been studied \emph{transversals} in Latin squares i.e.  sets of entries no two of which share the same row, column, or symbol.
+Transversals also date back to Euler  who looked for orthogonal Latin squares---decompositions of a Latin square into transversals of size $n$.
+The existence question for transversal is particularly intriguing i.e. ``which Latin squares have large transversals?'' In the 60s, a number of conjectures arose about what the answer should be. In particular Ryser conjectured that all odd Latin squares have a size $n$ transversal, while Brualdi and Stein conjectured that all Latin squares have a size $n-1$ transversal.
+Despite many positive results, these conjectures are far from solved. My belief is that perhaps they are too restrictive and should follow as corollaries from some more general result. Because of this I have focused my research on developing techniques for various generalizations of the Ryser-Brualdi-Stein Conjectures.
+</p>
+
+<h4>The Aharoni-Berger Conjecture</h4>
+<p>
+Ryser's Conjecture is equivalent to the statement that ``for odd $n$, any proper colouring of the edges of $K_{n,n}$ by $n$ colours has a rainbow matching using every colour.'' Here  ``proper colouring'' means an edge-colouring where the edges at each vertex have different colours, and ``rainbow matching'' means a set of disjoint edges of different colours. %To see the equivalence with the Latin square formulation, let the vertices of $K_{n,n}$ be called $x_1, \dots, x_n, y_1, \dots, y_n$ and build an $n\times n$ array in which the symbol in the $(i,j)$th entry corresponds to the colour of the edge $x_iy_j \in K_{n,n}$. It is easy to check that this array is a Latin square, and transversals in the Latin square correspond to rainbow matchings in $K_{n,n}$.
+</p>
+
+<p>
+Aharoni and Berger conjectured that the conclusion of Ryser's Conjecture should hold for a more general class of coloured bipartite graphs. They conjectured that every properly coloured bipartite graph with $n+1$ edges of each colour has a rainbow matching using every colour. A number of authors proved weaker versions of this conjecture when there are much more than $n+1$ edges of each colour. I improved on all previous results by proving an approximate version of the conjecture---that every properly coloured bipartite graph with $n+o(n)$ edges of each colour has a rainbow matching using every colour.
+</p>
+
+<p>
+To prove my result I developed a technique of studying rainbow matchings via certain auxiliary directed graphs. %Currently, I am not aware of any barriers to stop some version of this technique from solving the full Aharoni-Berger Conjecture. 
+In the future I would like to study this technique further and identify any barriers that prevent it from solving the full  Ryser-Brualdi-Stein Conjectures.
+</p>
+
+
+<h4>Grinblat's Problem</h4>
+<p>
+Grinblat posed a problem which is a version of the Aharoni-Berger Conjecture for non-bipartite graphs. Specifically he asked whether in every graph coloured by $n$ colours in which every colour covers $\geq 3n/2$ vertices, and every colour is a union of cliques, there is a rainbow matching using every colour. 
+The motivation for this question does not come from Latin squares but rather from abstract set theory. Here Grinblat's problem arose during his program to study properties of several algebras on a set of vertices. 
+</p>
+
+<p>
+Several authors proved weaker versions of Grinblat's problem when every colour covers much more than $3n/2$ vertices.
+Together with Clemens and Ehrenm\"uller, we improved all previous results by proving an approximate version of the conjecture---that if every colour covers $3n/2+o(n)$ vertices, there is a rainbow matching using every colour. 
+I believe that with more work, our techniques should be powerful enough to solve Grinblat's problem for sufficiently large $n$.
+</p>
+
+
+
+<h4>Andersen's Conjecture</h4>
+<p>
+Anderson conjectured that every properly coloured $K_n$ has a rainbow path of length $n-1$. 
+If true, this conjecture would imply that every symmetric Latin square has a large transversal with a certain cyclic structure.
+Thus one motivation for studying it is to work out whether in the Ryser-Brualdi-Stein Conjectures we should be looking for special kinds of transversals. 
+</p>
+
+<p>
+Several authors proved weaker versions of Andersen's Conjecture when the rainbow path is much shorter than $n-1$.
+Together with Alon and Sudakov, we improved all previous results by proving an approximate version of the conjecture---every properly coloured $K_n$ has a rainbow cycle of length $n-o(n)$. 
+A key intermediate part of a proof shows that the subgraph of a properly coloured $K_n$ formed by a random set of colours has  a similar edge distribution to a truly random graph. This result is likely to have further applications in the study of Latin squares.
+</p>
+
+<hr>
+<a name="RamseyTheory"></a> 
+<h3>Ramsey Theory</h3>
+<p>
+Ramsey theory is the study of finding ordered substructures in large structures which may, in principle, be very disordered.
+The classic example of this is Ramsey's Theorem, which says that  any sufficiently large $2$-edge-coloured complete graph contains a monochromatic complete subgraph on $n$ vertices. This is a very important theorem, since it has many applications---for example it immediately implies that every sufficiently long sequence of numbers contains a long subsequence which is either increasing or decreasing---which is a useful tool in analysis. 
+</p>
+<p>
+The basic problem in Ramsey theory is to estimate the Ramsey number $R(G,H)$ of a pair of graphs $G$ and $H$---the smallest $n$ such that every red/blue edge-colouring of the complete graph on $n$ vertices contains a red copy of $G$ or a blue copy of $H$.
+In other words one wants to estimate exactly how large a coloured complete graph can  be without a certain type of structure arising. 
+%To give a lower bound on $R(G,H)$, one needs to construct a coloured complete graph with no red copy $G$ or blue copy of  $H$. 
+Burr observed that a natural lower bound $R(G,H)\geq (|G|-1)(\chi(H)-1)+\sigma(H)$ holds for all connected graphs $G$ and $H$ (here $\chi(H)$, the chromatic number of $H$ is the minimum number of colours needed to colour the vertices of $H$ such that adjacent vertices have different colours, $\sigma(H)$ is the size of the smallest colour class in such a colouring of $H$ by $\chi(H)$ colours.)
+For some pairs of graphs equality holds in Burr's bound. In 1983 Burr and Erd\H{o}s initiated the study of such graphs. They defined a graph $G$ to be $H$-good if we have $R(G,H)= (|G|-1)(\chi(H)-1)+\sigma(H)$. 
+</p>
+<p>
+To date there have been many pairs of graphs found which are good. For example Erd\H{o}s, Faudree, Rousseau, and Schelp showed that the path $P_n$ is $H$-good for any graph $H$ with $n\geq |H|^4$.
+Allen, Brightwell, and Skokan made a  conjecture about what the right dependence of $n$ and $|H|$ should be, namely that $P_n$ is $H$-good for $n\geq \chi(H)|H|$. Despite work by a number of researchers on this problem the best known bounds on this problem were quadratic i.e. the conjecture was only known to hold when $n\geq |H|^2$.
+Together with Sudakov, we fully solved this conjecture for $\chi\geq 4$ and obtained good linear bounds for $\chi=2$ and $3$~\cite{PokrovskiySudakovRamseyPath}. 
+With Balla and Sudakov, we also proved similar results for cycles and trees improving on several old results of Erd\H{o}s et al.
+Our proofs introduced the technique of using expanders to this area which is likely to have further applications in the study of Ramsey goodness.
+</p>
+
+
+<hr>
+<a name="PositionalGames"></a> 
+<h3>Positional games</h3>
+
+<hr>
+<a name="ConnectednessTournaments"></a> 
+<h3>Connectedness Of Tournaments</h3>
+<p>
+Consider a communication network---such as the network of internet routers connected by optic fibres. How many routers would have to fail before communication becomes impossible? This number is called the connectedness of the network. Formally, a graph is connected if there is a path between any two vertices, and a graph is k-connected if it remains connected after the removal of any set of $(k - 1)$-vertices. Connectedness could be seen as a notion of how robust a network is.
+</p>
+
+<h4> Hamiltonian cycles</h4>
+<p>
+What kind of structures are we interested in finding in highly connected graphs? Perhaps the most important one is a \emph{Hamiltonian cycle} i.e. a cycle which passes through every vertex. Such cycles have been studied since Hamilton introduced them in the 19th century. In modern times they have become important since finding them is a special case of the Traveling Salesman Problem. It is easy to see that every Hamiltonian graph is connected, but not every connected graph is Hamiltonian. 
+However the converse becomes true if the graph we are considering is a tournament i.e. a directed graph which has exactly one edge between any two vertices. This is a remarkable result since necessary and sufficient conditions for Hamiltonicity are extremely rare.
+</p>
+<p>
+One could ask whether having high connectedness in a tournament is enough to guarantee \emph{many} Hamiltonian cycles.
+Thomassen conjectured this in the 80s---specifically he conjectured that there is a function $f(k)$ such that every $f(k)$-connected tournament has $k$ edge-disjoint Hamiltonian cycles. This conjecture was eventually proved by K\"uhn, Lapinskas, Osthus, and Patel. Unfortunately they proved it with the function $f(k)=O(k^2\log^2 k)$ which doesn't match the best lower bound which is of order $k^2$.
+K\"uhn et al. conjectured that the lower bound should be correct i.e. that every $O(k)$-connected tournament has $k$ edge-disjoint Hamiltonian cycles. 
+</p>
+<p>
+My main result in this area is a complete proof of the conjecture of K\"uhn et al. This result solves the problem introduced by Thomassen by determining the order of magnitude of the function $f(k)$ up to a constant factor. The proof is based on developing a method introduced by K\"uhn et al. called the ``linkage structure method.''  Informally, a linkage structure $L$ is a small set of vertices such that for any pair of vertices $x$ and $y$, there is an $x$ to $y$ path which is mostly contained in $L$. The key novelty of the linkage structures I introduced is that they are much smaller than ones previously used, which allows one to employ them to prove asymptotically tight results. 
+</p>
+
+<h4>Linkedness</h4>
+<p>
+A second application for my techniques concerns linkedness of tournaments. A directed graph is said to be $k$-linked if for any two ordered sets of vertices $(x_1, ..., x_k)$ and $(y_1, ..., y_k)$ there are disjoint paths joining $x_i$ to $y_i$ for all $i$. Like connectedness, linkedness could be seen as a notion of how robust a network is. Linkedness is known to be the stronger property, since by a theorem of Menger, every $k$-linked graph is $k$-connected. It is desirable to have some sort of converse to this fact. 
+For undirected graphs a partial converse was proved by Bollob\'as and Thomason. They showed that every $22k$-connected graph is $k$-linked. This result is quite important since in many applications it allows one to replace connectedness by the stronger property of linkedness.
+</p>
+<p>
+For directed graphs the situation is more complicated since Thomassen showed that there are highly connected directed graphs which are not even $2$-linked.
+However for \emph{tournaments} is is possible that every highly connected tournament is highly linked. 
+Thomassen showed that every $(k!)$-connected tournament is $k$-linked. K\"uhn et al. conjectured that there should be a constant $C$ such that every $Ck$-connected tournament is $k$-linked. I proved this conjecture with $C = 452$. 
+This shows that the natural analogue of the  Bollob\'as and Thomason holds for tournaments.
+My result is likely to have applications in future research since it shows that for tournaments we can often replace connectedness with the stronger property of linkedness.
+</p>
+
+</body>
+</html>

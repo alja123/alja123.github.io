@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Research</title>   
+ <link rel="stylesheet" href="Style.css">
+
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+</head>
+<body class="dark_grid">
+
+<div id="navbar">
+<ul>
+<li>&nbsp;<img src="CounterexampleWhite.svg" height="70">&nbsp;&nbsp;</li>
+<li><a href="index.html">About</a></li>
+<li><a href="cv.pdf">CV</a></li>
+<li><a href="Publications.html">Publications</a></li>
+<li><a href="Talks.html">Talks</a></li>
+<li><a class="active" href="Research.html">Research</a></li>
+<li><a href="Teaching.html">Teaching</a></li>
+<li><a href="OpenProblems.html">Open Problems</a></li>
+<li style="float:right"><img src="bbkblack.svg" height="70">
+</li>
+
+</ul>
+</div>
+
+<div class="transparent";    style="width:17%; float:right; padding:0;">
+</div>
+
+<div class="transparent">
+<h3>Research interests</h3>
+
+    <ul>
+
+	<li>
+	<a href="#RainbowStructures">Rainbow structures</a>
+	</li>  
+
+	<li>
+	<a href="#RamseyTheory">Ramsey theory</a>
+	</li>  
+
+	<li>
+	<a href="#ConnectednessInTournaments">Connectedness in tournaments</a>
+	</li>  
+
+	<li>
+	<a href="#MonochromaticPartitioning">Monochromatic partitioning</a>
+	</li>  
+
+	<li>
+	<a href="#NonnegativeSums">Nonnegative sums</a>
+	</li>  
+	
+
+	<li>
+	<a href="#PositionalGames">Positional games</a>
+	</li>  
+
+
+	<li>
+	<a href="#HypergraphMatchings">Hypergraph matchings</a>
+	</li>  
+
+	
+	<li>
+	<a href="#ExtremalCombinatorics">Extremal combinatorics</a>
+	</li>  
+
+</ul>
+</div>
+
+
+<div class="lighter">
+<a name="RainbowStructures"></a> 
+ <div class="figure">
+ <img src="LatinSquare.svg" width=100%;   alt="A transversal in a Latin square and the rainbow matching in the corresponding coloured complete bipartite graph." >
+ <p>A transversal in a Latin square and the rainbow matching in the corresponding coloured complete bipartite graph.</p>
+</div>
+<h3>Rainbow Structures</h3>
+<p>
+My recent research has been about Latin squares. These are classic objects introduced in the 18th century by Euler.
+A Latin square is an \(n \times n\) array of symbols with no symbol appearing twice in the same row or column. 
+Since Euler introduced them,  Latin squares have remained a very active area of research, due to their many applications to other areas of mathematics, such as group theory, coding theory, and the design of experiments. 
+They are also familiar to the layperson in the form of Sudoku puzzles, which when completed become Latin squares.
+</p>
+
+
+<p>
+I have been studied <i>transversals</i> in Latin squares i.e.  sets of entries no two of which share the same row, column, or symbol.
+Transversals also date back to Euler  who looked for orthogonal Latin squares&mdash;decompositions of a Latin square into transversals of size \(n\).
+The existence question for transversal is particularly intriguing i.e. "which Latin squares have large transversals?" In the 60s, conjectures arose about what the answer should be.  Ryser conjectured that all odd Latin squares have a size \(n\) transversal. Brualdi and Stein conjectured that all Latin squares have a size \(n-1\) transversal.
+Despite many positive results, these conjectures are far from solved. I have conducted research on some variants and generalizations of these conjectures.
+</p>
+
+<hr>
+
+<h3>The Aharoni-Berger Conjecture</h3>
+<p>
+Ryser's Conjecture is equivalent to the statement that "for odd \(n\), any proper colouring of the edges of \(K_{n,n}\) by \(n\) colours has a rainbow matching using every colour." Here  "proper colouring" means an edge-colouring where the edges at each vertex have different colours, and "rainbow matching" means a set of disjoint edges of different colours. To see the equivalence with the Latin square formulation, let the vertices of \(K_{n,n}\) be called \(x_1, \dots, x_n, y_1, \dots, y_n\) and build an \(n\times n\) array in which the symbol in the \((i,j)\)th entry corresponds to the colour of the edge \(x_iy_j \in K_{n,n}\). It is easy to check that this array is a Latin square, and transversals in the Latin square correspond to rainbow matchings in \(K_{n,n}\).
+Aharoni and Berger conjectured that the conclusion of Ryser's Conjecture should hold for a more general class of coloured bipartite graphs.
+</p>
+ <div class="figure">
+  <img src="RainbowDigraph.svg" width=100%  alt="A rainbow matching in a coloured graph and the corresponding directed graph." >
+ <p>A rainbow matching in a coloured graph and the corresponding directed graph.</p>
+</div>
+<p>
+<b>Conjecture (Aharoni and Berger):</b> every properly coloured bipartite multigraph with \(n+1\) edges of each colour has a rainbow matching using every colour.
+</p>
+
+
+<p>
+There have been many partial results about the Aharoni-Berger Conjecture. The most natural way of attacking it is to consider graphs which have substantially more than \(n+1\) edges in each colour, and show that such graphs have a rainbow matching using every colour. For example, Aharoni, Charbit, and Howard
+ proved that having \(\lfloor 7n/4\rfloor\) edges of every colour is sufficient to guarantee a rainbow matching of size \(n\). Kotlar and Ziv improved this to \(\lfloor 5n/3\rfloor\). 
+I proved that \(\phi n+o(n)\) is sufficient, where \(\phi\approx 1.618\) is the Golden Ratio.
+ Clemens and Ehrenm&uuml;ller   showed that \(3n/2+o(n)\) is sufficient. 
+Finally Aharoni, Kotlar, and Ziv  showed that having \(3n/2+1\) edges of each colour in an \(n\)-edge-coloured bipartite multigraph guarantee a rainbow matching of size \(n\).
+
+I  proved the following approximate version of the conjecture.
+</p>
+<p>
+<b>Theorem (Pokrovskiy):</b> Every properly coloured bipartite multigraph with \(n+o(n)\) edges of each colour has a rainbow matching using every colour.
+</p>
+<p>
+To prove my result I developed a technique of studying rainbow matchings via certain auxiliary directed graphs. It turns out that studying connectedness properties of these auxiliary directed graphs can help with the task of enlarging a rainbow matching in the original graph.
+</p>
+
+<p>
+<a href="http://arxiv.org/pdf/1609.06346.pdf"><i>An approximate version of a conjecture of Aharoni and Berger</i>,
+A. Pokrovskiy,
+arXiv:1609.06346</a>
+</p>
+
+<p>
+<a href="http://arxiv.org/pdf/1504.05373.pdf"><i>Rainbow matchings and rainbow connectedness</i>,
+A. Pokrovskiy,
+arXiv:1504.05373</a>
+</p>
+
+<hr>
+
+<h3>Grinblat's Problem</h3>
+<p>
+Grinblat posed a problem which could be seen as a version of the Aharoni-Berger Conjecture for non-bipartite graphs. 
+</p>
+<div class="figure">
+ <img src="Grinblat.svg" width=100%;  alt="A coloured graph as in Grinblat's Problem." >
+ <p>A coloured graph as in Grinblat's Problem, and a rainbow matching it contains.</p>
+</div>
+<p>
+<b>Problem (Grinblat):</b>  Every multigraph coloured by \(n\) colours in which every colour covers \(\geq 3n/2\) vertices, and every colour is a union of cliques, there is a rainbow matching using every colour.
+</p>
+<p>
+The motivation for this question does not come from Latin squares but rather from abstract set theory. Here Grinblat's problem arose during his program to study properties of several algebras on some ground set. 
+</p>
+ 
+
+
+
+<p>
+Several authors proved  versions of Grinblat's problem when every colour covers much more than \(3n/2\) vertices.
+Grinblat  proved  that if every colour covers \(\geq 10n/3 + \sqrt{2n/3}\) vertices, then there is a rainbow matching using every colour. Nivasch and Omri improved this to \(16n/5 + O(1)\).
+Together with Clemens and Ehrenm&uuml;ller, we improved these by proving an approximate version of the conjecture.</p>
+<p>
+<b>Theorem (Clemens, Ehrenm&uuml;ller, and Pokrovskiy):</b> Every multigraph coloured by \(n\) colours in which every colour covers \(\geq 3n/2+o(n)\) vertices, and every colour is a union of cliques, there is a rainbow matching using every colour.
+</p>
+
+<a href="http://www.sciencedirect.com/science/article/pii/S0095895616300314"><i>On sets not belonging to algebras and rainbow matchings in graphs</i>,
+	D. Clemens, J. Ehrenm&#252;ller, A. Pokrovskiy,
+	J. Combin. Theory Ser. B., (2016).</a>
+
+<hr>
+
+<h3>Andersen's Conjecture</h3>
+<p>
+Anderson made the following conjecture
+</p>
+<p>
+<b>Conjecture (Andersen):</b>  Every properly coloured \(K_n\) has a rainbow path of length \(n-1\). 
+</p>
+<p>
+<p>
+If true, this conjecture would imply that every symmetric Latin square has a large transversal with a certain "path-like" structure.
+Thus one motivation for studying it is to work out whether in the Ryser-Brualdi-Stein Conjectures we should be looking for special kinds of transversals. 
+</p>
+
+<p>
+There has been a lot of work in showing that properly coloured complete graph have long paths and cycles.
+Etesami, Mahini and  Mahmoody  showed
+that every properly coloured \(K_n\) has a rainbow cycle of length \(\geq
+n/2-1\).  Gy&aacute;rf&aacute;s and Mhalla  showed that every
+\(1\)-factorization of \(K_n\) has a rainbow path of length \(\geq (2n+1)/3\).
+Gy&aacute;rf&aacute;s, Ruszink&oacute;, S&aacute;rk&ouml;zy,
+and Schelp  showed that
+every properly coloured \(K_n\) has a rainbow cycle of length \(\geq
+(4/7-o(1))n\). Gebauer and Mousset, and
+independently Chen and Li showed that every properly
+coloured \(K_n\) has a rainbow path of length \(\geq (3/4-o(1))n\).
+Together with Alon and Sudakov, we improved all previous results by proving an approximate version of the conjecture.
+<p>
+<b>Theorem (Alon, Pokrovskiy, and Sudakov):</b>  Every properly coloured \(K_n\) has a rainbow cycle of length \(n-O(n^{\frac34})\). 
+</p>
+A key intermediate part of a proof shows that the subgraph of a properly coloured \(K_n\) formed by a random set of colours has  a similar edge distribution to a truly random graph. This result is likely to have further applications in the study of Latin squares.
+</p>
+
+<a href="http://arxiv.org/abs/1608.07028"><i>Random subgraphs of properly edge-coloured complete graphs and long rainbow cycles</i>,
+	N. Alon, A. Pokrovskiy, B. Sudakov,
+	Israel Journal of Mathematics, (2016).</a>
+</div>
+
+<div class="darker">
+<a name="RamseyTheory"></a> 
+<h3>Ramsey Theory</h3>
+<p>
+Ramsey theory is the study of finding ordered substructures in large structures which may, in principle, be very disordered.
+The classic example of this is Ramsey's Theorem, which says that  any sufficiently large \(2\)-edge-coloured complete graph contains a monochromatic complete subgraph on \(n\) vertices. This is a very important theorem, since it has many applications&mdash;for example it immediately implies that every sufficiently long sequence of numbers contains a long subsequence which is either increasing or decreasing&mdash;which is a useful tool in analysis. 
+</p>
+ <div class="figure">
+ <img src="RamseyGoodness.svg" width=100%;   alt="Burr's construction" >
+ <p>Burr's construction showing that \((|G|-1)(\chi(H)-1)+\sigma(H)\) holds for all  graph \(G\) and \(H\) with \(G\) connected.</p>
+</div>
+<p>
+The basic problem in Ramsey theory is to estimate the Ramsey number \(R(G,H)\) of a pair of graphs \(G\) and \(H\)&mdash;the smallest \(n\) such that every red/blue edge-colouring of the complete graph on \(n\) vertices contains a red copy of \(G\) or a blue copy of \(H\).
+In other words one wants to estimate exactly how large a coloured complete graph can  be without a certain type of structure arising. 
+Burr observed that a natural lower bound \(R(G,H)\geq (|G|-1)(\chi(H)-1)+\sigma(H)\) holds for all connected graphs \(G\) and \(H\) (here \(\chi(H)\), the chromatic number of \(H\) is the minimum number of colours needed to colour the vertices of \(H\) such that adjacent vertices have different colours, \(\sigma(H)\) is the size of the smallest colour class in such a colouring of \(H\) by \(\chi(H)\) colours.)
+For some pairs of graphs equality holds in Burr's bound. In 1983 Burr and Erd&#x0151;s initiated the study of such graphs. They defined a graph \(G\) to be \(H\)-good if we have \(R(G,H)= (|G|-1)(\chi(H)-1)+\sigma(H)\). 
+</p>
+<p>
+To date there have been many pairs of graphs found which are good. For example Erd&#x0151;s, Faudree, Rousseau, and Schelp showed that the path \(P_n\) is \(H\)-good for any graph \(H\) with \(n\geq |H|^4\).
+Allen, Brightwell, and Skokan conjectured that for substantially smaller \(n\), \(P_n\) should still be \(H\)-good&mdash;namely that \(P_n\) is \(H\) for \(n\geq \chi(H)|H|\).  Towards this, Pei and Li showed that if \(n\geq 8|H|+3\sigma(H)^2+c\chi^8(H)\), then \(P_n\) is \(H\)-good.
+Together with Sudakov, we fully solved this conjecture for \(\chi\geq 4\) and obtained good linear bounds for \(\chi=2\) and \(3\). 
+Our proof introduced the technique of using expanders to this area which is likely to have further applications in the study of Ramsey goodness.
+</p>
+	<a href="http://www.sciencedirect.com/science/article/pii/S0095895616300454"><i>Ramsey goodness of paths</i>,
+	 A. Pokrovskiy, B. Sudakov,
+	J. Combin. Theory Ser. B., (2016).</a>
+
+
+
+</div>
+<div class="lighter">
+<a name="ConnectednessInTournaments"></a> 
+<h3>Connectedness Of Tournaments</h3>
+<p>
+Consider a communication network&mdash;such as the network of internet routers connected by optic fibres. How many routers would have to fail before communication becomes impossible? This number is called the connectedness of the network. Formally, a graph is connected if there is a path between any two vertices, and a graph is k-connected if it remains connected after the removal of any set of \((k - 1)\)-vertices. Connectedness could be seen as a notion of how robust a network is.
+</p>
+<hr>
+ <div class="figure">
+ <img src="Connector.svg" width=100%;   alt="A connector" >
+ <p>A connector&mdash;one of the main tools used to build the linkage structures used in my paper.</p>
+</div>
+<h3> Hamiltonian cycles</h3>
+<p>
+What kind of structures are we interested in finding in highly connected graphs? Perhaps the most important one is a <i>Hamiltonian cycle</i> i.e. a cycle which passes through every vertex. Such cycles have been studied since Hamilton introduced them in the 19th century.  It is easy to see that every Hamiltonian graph is connected, but not every connected graph is Hamiltonian. 
+However the converse becomes true if the graph we are considering is a tournament i.e. a directed graph which has exactly one edge between any two vertices. This is a remarkable result since necessary and sufficient conditions for Hamiltonicity are extremely rare.
+</p>
+
+<p>
+One could ask whether having high connectedness in a tournament is enough to guarantee <i>many</i> Hamiltonian cycles.
+Thomassen conjectured this in the 80s&mdash;specifically he conjectured that there is a function \(f(k)\) such that every \(f(k)\)-connected tournament has \(k\) edge-disjoint Hamiltonian cycles. This conjecture was  proved by K&uuml;hn, Lapinskas, Osthus, and Patel. They proved it with the function \(f(k)=O(k^2\log^2 k)\). They also gave a construction showing a lower bound of order \(k^2\) for \(f(k)\).
+K&uuml;hn et al. conjectured that the lower bound should be the correct order of magnitude i.e. that every \(O(k^2)\)-connected tournament has \(k\) edge-disjoint Hamiltonian cycles. 
+My main result in this area is a  proof of the conjecture of K&uuml;hn et al. 
+</p>
+<p>
+<b>Theorem (Pokrovskiy):</b> There is a constant \(C\) such that every \(Ck^2\)-connected tournament has \(k\) edge-disjoint Hamiltonian cycles.
+</p>
+<p>
+ The proof is based on developing a method introduced by K&uuml;hn et al. called the "linkage structure method."  Informally, a linkage structure \(L\) is a small set of vertices such that for any pair of vertices \(x\) and \(y\), there is an \(x\) to \(y\) path which is mostly contained in \(L\). 
+</p>
+
+<p>
+<a href="http://imrn.oxfordjournals.org/content/early/2016/04/09/imrn.rnw009"><i>Edge disjoint Hamiltonian cycles in highly connected tournaments</i>,
+A. Pokrovskiy,
+Elecron. Math. Res. Notices, (2016).
+</a>
+</p>
+
+<hr>
+
+<h3>Linkedness</h3>
+<p>
+A second application for my techniques concerns linkedness of tournaments. A directed graph is said to be \(k\)-linked if for any two ordered sets of vertices \((x_1, ..., x_k)\) and \((y_1, ..., y_k)\) there are disjoint paths joining \(x_i\) to \(y_i\) for all \(i\). Like connectedness, linkedness could be seen as a notion of how robust a network is. Linkedness is known to be the stronger property, since every  sufficiently large \(k\)-linked graph is \(k\)-connected. It is desirable to have some sort of converse to this fact. 
+For undirected graphs a partial converse was proved by Larman and Mani, and by Jung   who showed that there is a function \(f(k)\) such that every \(f(k)\)-connected graph is \(k\)-linked. This result uses a theorem of Mader about the existence of large topological complete minors in graphs with many edges. The first bounds on \(f(k)\) were exponential in \(k\). Bollob&aacute;s and Thomason were the first to show that a linear bound \(f(k)\). Specifically, they showed that every \(22k\)-connected graph is \(k\)-linked. Such a result is  important since in many applications it allows one to replace connectedness by the stronger property of linkedness.
+</p>
+<p>
+For directed graphs the situation is more complicated since Thomassen showed that there are highly connected directed graphs which are not even \(2\)-linked.
+However for <i>tournaments</i> is is possible that every highly connected tournament is highly linked. 
+Thomassen showed that every \((k!)\)-connected tournament is \(k\)-linked. K&uuml;hn, Lapinskas, Osthus, and Patel improved this bound to \(O(k \log k)\), and conjectured that there should be a constant \(C\) such that every \(Ck\)-connected tournament is \(k\)-linked. I proved this conjecture. 
+</p>
+<p>
+<b>Theorem (Pokrovskiy):</b> Every \(452k\)-connected tournament is \(k\)-linked
+<p>
+This shows that the natural analogue of the  Bollob&aacute;as and Thomason holds for tournaments.
+This is likely to have applications in future research since it shows that for tournaments we can often replace connectedness with the stronger property of linkedness.
+</p>
+<a href="http://www.sciencedirect.com/science/article/pii/S009589561500060X"><i>Highly linked tournaments</i>
+	A. Pokrovskiy,
+	J. Combin. Theory Ser. B., 115 (2015) 339&ndash;347.</a>
+</div>
+
+<div class="darker">
+<a name="MonochromaticPartitioning"></a> 
+<h3>Monochromatic partitioning</h3>
+<p>
+In 1967 Gerencs&eacute;r and Gy&aacute;rf&aacute;s observed that certain Ramsey-theoretic results have generalizations which say something about the global structure of every coloured complete graph. Specifically they proved that the vertices of every \(2\)-edge-coloured  \(K_n\) can be covered by two disjoint monochromatic paths. By the Pigeonhole principle one of these paths must have length \(\geq n/2\), and so their result generalizes the bound \(R(P_{n/2}, P_{n/2})\leq n\) on the Ramsey number of a path.
+This result started the field of <i>monochromatic partitioning</i> which is concerned with proving other Ramsey-type results with an additional global structure.
+</p>
+
+<hr>
+<h3>The Erdos-Gyarfas-Pyber Conjecture</h3>
+ <div class="figure">
+ <img src="EGPCounterexample.svg" width=100%;   alt="A counterexample" >
+ <p>A counterexample to the Erd&#x0151;s-Gy&aacute;rf&aacute;s-Pyber Conjecture for \(r=3\).</p>
+</div>
+<p>
+The central open problem in this area is a Erd&#x0151;s, Gy&aacute;rf&aacute;s, and Pyber from 1991.
+</p>
+
+<p>
+<b>Conjecture (Erd&#x0151;s, Gy&aacute;rf&aacute;s, and Pyber):</b> The vertices of every \(r\)-edge-coloured complete graph can be covered by \(r\) vertex-disjoint monochromatic cycles.
+<p>
+There has been a lot of work on this conjecture.
+For general  \(r\), Erd&#x0151;s, Gy&aacute;rf&aacute;s, and Pyber showed that  there is a function \(f(r)\) such that, for all \(n\), any \(r\)-edge-coloured \(K_n\) can be partitioned into \(f(r)\) monochromatic cycles.
+The best known upper bound for \(f(r)\) is due to Gy&aacute;rf&aacute;s, Ruszink&oacute;, S&aacute;rk&ouml;zy, and Szemer&eacute;di  who showed that \(O(r \log{r})\) monochromatic cycles are sufficient to partition the vertices of an \(r\)-edge-coloured \(K_n\).
+Additionally there has been progress for \(r=2\).  
+ Gy&aacute;rf&aacute;s  showed that the vertices of a \(2\)-edge-coloured complete graph can be covered by two monochromatic cycles intersecting in at most one vertex.  
+The \(r=2\) case of the conjecture was proved by &#321;uczak, R&ouml;dl, and Szemer&eacute;di for large \(n\), and later by Allen for somewhat smaller \(n\) (but still large) n.
+The \(r=2\) case of the  Erd&#x0151;s-Gy&aacute;rf&aacute;s-Pyber Conjecture  shown to be true for all \(n\) by Bessy and Thomass&eacute;.
+For \(r=3\),  Gy&aacute;rf&aacute;s, Ruszink&oacute;, S&aacute;rk&ouml;zy, and Szemer&eacute;di proved an approximate version of the Erd&#x0151;s-Gy&aacute;rf&aacute;s-Pyber Conjecture&mdash;they showed that every  \(3\)-edge-coloured \(K_n\) has \(3\) vertex-disjoint monochromatic cycles covering \(n-o(n)\) vertices.<br>
+
+
+I disproved the Erd&#x0151;s-Gy&aacute;rf&aacute;s-Pyber Conjecture for all \(r\geq 3\).  
+</p>
+<p>
+<b>Theorem (Pokrovskiy):</b> For \(r\geq 3\), there are infinitely many \(r\)-edge-coloured complete graphs which cannot be covered by \(r\) vertex-disjoint monochromatic cycles.
+</p>
+
+<p>
+On the positive side, I was able to give an improved approximate version of the \(r=3\) case of the conjecture.</p>
+<p>
+<b>Theorem (Letzter; Pokrovskiy):</b> There is a constant \(c\) such that every  \(3\)-edge-coloured \(K_n\) has \(3\) vertex-disjoint monochromatic cycles covering \(n-c\) vertices.
+</p>
+<p>
+The above theorem was also proved independently by Letzter using a different proof technique.
+My proof gives \(c_3\leq 43000\) for sufficiently large \(n\) and Letzter's proof gives \(c_3\leq 60\) for sufficiently large \(n\). 
+</p>
+<p>
+<a href="http://www.sciencedirect.com/science/article/pii/S0095895614000045"><i>Partitioning edge-coloured complete graphs into monochromatic cycles and paths</i>
+	A. Pokrovskiy,
+	J. Combin. Theory Ser. B., 106 (2014), 70&ndash;97.</a><br></p>
+<p><a href="http://arxiv.org/pdf/1607.03348.pdf"><i>Partitioning a graph into a cycle and a sparse graph</i>
+	A. Pokrovskiy,
+	arXiv:1607.03348</a></p>
+
+<hr>
+<h3>Monochromatic path partitions</h3>
+<p>
+Gy&aacute;rf&aacute;s conjectured the following weaker version of the Erd&#x0151;s-Gy&aacute;rf&aacute;s-Pyber Conjecture.
+</p>
+<p>
+<b>Conjecture (Gy&aacute;rf&aacute;s):</b> The vertices of every \(r\)-edge-coloured complete graph can be covered by \(r\) vertex-disjoint monochromatic paths.
+</p>
+<p>
+There are no known counterexamples the the above conjecture&mdash;all the known counterexamples to the Erd&#x0151;s-Gy&aacute;rf&aacute;s-Pyber Conjecture are specific to cycle partitions. The Gy&aacute;rf&aacute;s Conjecture was known to hold only for \(r=2\), where it was proved by Gerencs&eacute;r and Gy&aacute;rf&aacute;s. I was able to prove it for \(r=3\).
+</p>
+<p>
+<b>Theorem (Pokrovskiy):</b> The vertices of every \(3\)-edge-coloured complete graph can be covered by \(3\) vertex-disjoint monochromatic paths.
+</p>
+<p>
+The above Theorem demonstrates the surprising fact that there is a real difference between partitioning complete graphs into paths and cycles. 
+</p>
+<p>
+<a href="http://www.sciencedirect.com/science/article/pii/S0095895614000045"><i>Partitioning edge-coloured complete graphs into monochromatic cycles and paths</i>
+	A. Pokrovskiy,
+	J. Combin. Theory Ser. B., 106 (2014), 70&ndash;97.</a><br></p>
+
+
+<hr>
+ <div class="figure">
+ <img src="PathsMultipartite.svg" width=100%;   alt="An example" >
+ <p>A partition of a graph \(G\) into 2 paths and a balanced complete 3-partite graph in the complement of \(G\).</p>
+</div>
+<h3>Partitioning into paths and a complete multipartite graph</h3>
+
+<p>
+I proved the following theorem.
+</p>
+<p>
+<b>Theorem (Pokrovskiy):</b> The vertices of every \(2\)-edge-coloured complete graph can be covered by \(k\) monochromatic paths and a balanced \((k+1)\)-partite complete multipartite graph.
+</p>
+<p>
+This theorem generalises a result of Ben-Eliezer, Krivelevich, and Sudakov who proved it  for for \(k=1\). Ben-Eliezer, Krivelevich, and Sudakov also proved directed versions of the \(k=1\) case.
+</p>
+<p>
+This natural theorem has found many applications since it was proved. For example I used it to determine the Ramsey number \(R(P_n, K_m^k)\) in a certain range. I also used it to show that \(P_n\) is \(P_n^k\)-good, solving a conjecture of Allen, Brightwell, and Skokan. 
+Pei and Li used it to show that \(P_n\) is \(H\)-good for any graph \(H\) with  \(n\geq 8|H|+3\sigma(H)^2+c\chi^8(H)\).
+Elekes,  Soukup,  Soukup, and Szentmikl&oacute;ssy used it to determine the number of monochromatic squares of paths needed to partition a 2-edge-coloured infinite complete graph. 
+</p>
+<p>
+<a href="http://onlinelibrary.wiley.com/doi/10.1002/jgt.22036/full"><i>Calculating Ramsey numbers by partitioning coloured graphs</i>,
+	A. Pokrovskiy,
+	J. Graph Theory, (2016).</a></p>
+
+
+<hr>
+ <div class="figure">
+ <img src="CycleMinDegree.svg" width=100%;   alt="An example" >
+ <p>A graph which has no cycle \(C\) with \(\Delta(G[V(G)\setminus V(C)])< \frac12(|V(G)\setminus V(C)|-1)\). This shows that the bound in the first theorem is tight.</p>
+</div>
+<h3>Partitioning into a cycle and a sparse graph</h3>
+
+<p>
+I investigated results of the form "every graph \(G\) has a cycle \(C\) such that the induced subgraph of \(G\) on \(V(G)\setminus V(C)\) has small maximum degree." Such results are related to monochromatic partitioning results since they are equivalent to statemnts of the form "every \(2\)-edge-coloured complete graph can be partitioned into  a cycle and a graph with large minimum degree." I proved the following two theorems in this area.
+</p>
+<p>
+<b>Theorem (Pokrovskiy):</b> Every graph \(G\) has a cycle with  \(\Delta(G[V(G)\setminus V(C)])\leq \frac12(|V(G)\setminus V(C)|-1)\). 
+</p>
+<p>
+
+<p>
+<b>Theorem (Pokrovskiy):</b> Every \(k\)-connected graph \(G\)  has a cycle with  \(\Delta(G[V(G)\setminus V(C)])\leq \frac1{k+1}|V(G)\setminus V(C)|+3\).
+</p>
+<p>
+These results have applications to partitioning edge-coloured complete graphs into monochromatic cycles.</p>
+<p><a href="http://arxiv.org/pdf/1607.03348.pdf"><i>Partitioning a graph into a cycle and a sparse graph</i>
+	A. Pokrovskiy,
+	arXiv:1607.03348</a></p>
+
+</div>
+
+<div class="lighter">
+<a name="NonnegativeSums"></a> 
+<h3>Nonnegative sums</h3>
+<p>
+Suppose that we have a set of real numbers \(\{x_1, \dots, x_n\}\) with nonnegative sum.
+How few \(k\)-subsets of \(\{x_1, \dots, x_n\}\) can have nonnegative sum?
+By choosing \(x_1=n-1\) and \(x_2=\dots=x_n=-1\) we see that the answer to this question can be as low as \(\binom{n-1}{k-1}\).
+In 1987, Manickam, Mikl&oacute;s, and Singhi conjectured that for sufficiently large \(n\) this is the   minimum.
+</p>
+ <div class="figure">
+ <img src="MMSCycle.svg" width=100%;   alt="MMS Property" >
+ <p>A nonnegative weighting of a tight 3-uniform cycle which only has one nonnegative edge. This shows that tight cycles do not in general have the MMS Property, and demonstrates the need for more complicated hypergraphs with the MMS Property in my paper.</p>
+</div>
+
+<p>
+<b>Conjecture (Manickam, Mikl&oacute;s, and Singhi):</b> Suppose that \(n\geq 4k\), and we have \(n\) real numbers \(x_1, \dots, x_n\) such that \(x_1 + \dots + x_n \geq 0\). Then, at least \(\binom{n-1}  {k-1}\) subsets \(A\subset \{x_1, \dots, x_n\}\) of order \(k\) satisfy \(\sum_{a\in A} a\geq 0\)
+</p>
+
+
+<p>
+Despite the apparent simplicity of the statement of the Manickam-Mikl&oacute;s-Singhi Conjecture, it has been open for over two decades.
+Many partial results have been proven.  The conjecture has been proven for \(k\leq 3\) by Manickam  and independently by Chiaselotti and Marino.  It has been proven whenever \(n\equiv 0 \pmod{k}\) by Manickam and Singhi.
+In addition, several results have been proved establishing the conjecture when \(n\) is large compared to \(k\).  Manickam and Mikl&oacute;s  showed that the conjecture holds when \(n\geq (k - 1)(k^k + k^2 ) + k\) holds.  Tyomkyn  improved this bound to  \(n\geq k(4e \log k)^k \approx e^{ck\log \log k}\).  Recently Alon, Huang, and Sudakov  showed that the conjecture holds when \(n\geq 33k^2\).  Subsequently Frankl gave an alternative proof of the conjecture in a range of the form \(n\geq 3k^3/2\), and Chowdhury, Sarkis, and Shahriari  gave a proof of the conjecture in the range of the form \(n\geq 8k^2\).
+</p>
+
+<p>
+I was able to improve these by giving the first proof of the conjecture in a range where \(n\) is linear in \(k\).
+<p>
+<b>Theorem: </b> Suppose that \(n\geq 10^{46}k\), and we have \(n\) real numbers \(x_1, \dots, x_n\) such that \(x_1 + \dots + x_n \geq 0\). At least \(\binom{n-1}  {k-1}\) subsets \(A\subset \{x_1, \dots, x_n\}\) of order \(k\) satisfy \(\sum_{a\in A} a\geq 0\)
+</p>
+<p>
+The above theorem solves the Manickam-Mikl&oacute;s-Singhi Conjecture up to a constant factor in the bound on \(n\). The proof involved introducing a more general version of the problem&mdash;studying hypergraphs with the <i>MMS Property</i>. A \(d\)-regular hypergraph \(\mathcal{H}\) with vertex set \([n]\) has the MMS property if for any \(n\) real numbers \(x_1, \dots, x_n\) satisfying \(x_1 + \dots + x_n \geq 0\), there are \(d\) edges \(A\in \mathcal H\) satisfying \(\sum_{a\in A} a\geq 0\). One can show that to prove the  Manickam-Mikl&oacute;s-Singhi Conjecture for some \(n\) and \(k\) it is sufficient to produce <i>any</i> \(n\)-vertex \(k\)-uniform hypergraph \(\mathcal H\) which has the MMS property. Since there is a lot of freedom in the choice of \(\mathcal H\), this opens up new strategies to attack the conjecture. To prove my theorem, I used results from additive combinatorics to find very sparse hypergraphs which have the MMS property. 
+The study of hypergraphs with the MMS property is interesting on its own and is likely  to lead to further results. For example Huang and Sudakov proved that all sufficiently large hypergraphs with equal codegrees have the MMS property.
+</p>
+
+<a href="http://www.sciencedirect.com/science/article/pii/S0097316515000084"><i>A linear bound on the Manickam-Mikl&oacutes-Singhi Conjecture</i>,
+	A. Pokrovskiy,
+	J. Combin. Theory Ser. A, 2015.</a>
+</div>
+
+<div = class="darker">
+<a name="PositionalGames"></a> 
+<h3>The strong Ramsey game</h3>
+<div class="figure">
+ <img src="StrongRamseyGame.svg" width=100%;   alt="A 5-uniform hypergraph which gives a draw on the infinite board" >
+ <p>A 5-uniform hypergraph whose strong Ramsey game ends in a draw on the infinite board. The solid black line represents a tight path with 5 edges. The red, blue, and green circles represent two edges, and the dashed line another edge.</p>
+</div>
+<p>
+For integers \(n \geq q \geq 3\),  the strong Ramsey game \(\mathcal{R}(K_q, n)\) is defined as follows. In each round of this game, the first player, FP, claims a free edge of \(K_n\) and then the second player, SP, claims a free edge of \(K_n\). The first player to complete a copy of \(K_q\) with his edges is the winner. If neither player is able to build a copy of \(K_q\), then the game is declared a draw. A simple yet elegant game-theoretic argument, known as <i>strategy stealing</i>, shows that FP is guaranteed at least a draw in \(\mathcal{R}(K_q, n)\) for every \(n\) and \(q\). Moreover, it follows from Ramsey's Theorem that, for every \(q\), there exists an \(n_0\) such that \(\mathcal{R}(K_q, n)\) has no drawing position and is thus FP's win for every \(n \geq n_0\). Note that, while combining strategy stealing with Ramsey's Theorem can be used to show that \(\mathcal{R}(K_q, n)\) is FP's win, it does not provide an explicit winning strategy for FP.
+</p>
+
+
+<p>
+Consider now the strong game \(\mathcal{R}(K_q, \infty)\), which is defined identically to \(\mathcal{R}(K_q, n)\), except that it is played on the edge set of the countably infinite complete graph \(K_{\infty}\). 
+In \(\mathcal{R}(K_q, \infty)\), if neither player can claim a copy of \(K_q\) after any finite number of moves, then the game is declared to be a draw.
+Even though the board of this game is infinite, strategy stealing still applies, i.e., FP has a strategy which ensures that SP will never win \(\mathcal{R}(K_q, \infty)\). 
+Though Ramsey's Theorem does show that every \(2\)-edge-coloured \(K_{\infty}\) has arbitrarily large monochromatic cliques, this is not enough to imply that \(\mathcal{R}(K_q, \infty)\) is a FP win. This is because when playing \(\mathcal{R}(K_q, \infty)\) the two players may never fill up the entire board.
+A conjecture of Beck says that \(\mathcal{R}(K_q, \infty)\) sould be a FP win for all \(q\).
+</p>
+
+<p>
+Playing Ramsey games, we do not have to restrict our attention to cliques, or even to graphs for that matter. 
+It is natural to generalize the concepts to other graphs and to hypergraphs. 
+For every integer \(k \geq 2\) and every \(k\)-uniform hypergraph \(\mathcal{H}\), 
+we define the strong Ramsey games \(\mathcal{R}^{(k)}(\mathcal{H}, n)\) and \(\mathcal{R}^{(k)}(\mathcal{H}, \infty)\) played on the edges of complete \(k\)-uniform hypergraphs where the first player to build a copy of \(\mathcal{H}\) wins. Just like before, using strategy stealing and the hypergraph Ramsey theorem one shows that \(\mathcal{R}^{(k)}(\mathcal{H}, n)\) is a win for all hypergraphs \(\mathcal H\) and sufficiently large \(n\).  Therefore as before, one  would intuitively expect that FP has a winning strategy in \(\mathcal{R}^{(k)}(\mathcal{H}, \infty)\) for every \(\mathcal{H}\).
+Together with Hefetz, Kusch, Narins, Requil&eacute;, and Sarid we showed that this intuition is incorrect&mdash;there are hypergraphs for which  \(\mathcal{R}^{(k)}(\mathcal{H}, \infty)\) is a draw.
+</p>
+<p>
+<b>Theorem (Hefetz, Kusch, Narins, Pokrovskiy, Requil&eacute;, and Sarid):</b> There exists a \(5\)-uniform hypergraph \({\mathcal H}\) such that the strong game \(\mathcal{R}^{(5)}(\mathcal{H}, \infty)\) is a draw.
+</p>
+<p>
+The above theorem shows that, while it might be true that \(\mathcal{R}(K_q, \infty)\) is FP's win for any \(q \geq 4\), the intuition of basing this solely on strategy stealing and Ramsey Theory is incorrect.   
+</p>
+
+<a href="http://arxiv.org/pdf/1605.05443.pdf"><i>Strong Ramsey Games: Drawing on an infinite board</i>,
+	D. Hefetz, C. Kusch, L. Narins, A. Pokrovskiy, C. Requil&eacute;, A. Sarid,
+	arXiv:1605.05443</a>
+
+
+<hr>
+<h3>The discrete Voronoi game</h3>
+ <div class="figure">
+ <img src=" VoronoiTree.svg" width=100%;   alt="The extremal construction for the 2-round Voronoi game on trees" >
+ <p>A tree on which the first player can only get about one third of the vertices in a 2-round Voronoi game</p>
+</div>
+<p>
+The classic facility location problem deals with finding the optimal location for a facility (such as a supermarket, hospital, fire station) with respect to a given set of customers.  Typically, we want to place the facility to minimize the distance customers need to travel to get to it.
+Competitive facility location is a variant of the problem when  several service providers compete for the interests
+of the same set of customers.  An example would be two supermarket
+chains building shops in a city&mdash;with each chain trying to attract
+the largest number of customers.
+</p>
+<p>
+Together with Gerbner,  M&eacute;sz&aacute;ros, P&aacute;lv&ouml;lgyi, and Rote, I studied a model of competitive facility location called the <i>Voronoi game.</i>
+The Voronoi game is played on the vertices of a graph with two players alternately
+claiming vertices for \(t\) rounds.  In the end, the remaining
+vertices are divided such that
+each player receives the vertices that
+are closer to his or her claimed vertices. 
+For a graph \(G\), we defined the \(t\)-round Voronoi ratio of \(G\), denoted  \(VR(G, t)\), to be the proportion of the vertices that the first player claims in the t-round Voronoi game under optimal play by both players.
+With with Gerbner,  M&eacute;sz&aacute;ros, P&aacute;lv&ouml;lgyi, and Rote, we proved bounds on the Voronoi ratio for various natural classes of graphs. For general graphs, we showed that the Voronoi ratio can be anywhere between \(0\) and \(1\). However for bounded degree graphs, we showed that this can't happen by showing that \(VR(G,t)\leq 1-\frac{1}{2\Delta}\).
+For trees, we showed that the first player can get at least one quarter of the vertices, and we
+gave examples where she can get only little more than one third of
+them. Many of these results were proved using general inequalities we proved relating the t-round Voronoi ratio \(VR(G,t)\) to the 1-round Voronoi ratio \(VR(G, 1)\).  
+</p>
+
+<a href="http://arxiv.org/pdf/1303.0523v1.pdf"><i>Advantage in the discrete Voronoi game</i>
+	D. Gerbner,  V. M&eacute;sz&aacute;ros, D. P&aacute;lv&ouml;lgyi, A. Pokrovskiy, G. Rote,
+	J. Graph Algorithms Appl., 18 (2014) 439&ndash;457.</a>
+</div>
+
+
+<div = class="lighter">
+<div class="figure">
+ <img src="4TPP.svg" width=100%;   alt="4-uniform truncated projective plane" >
+ <p>A 4-uniform, 4-partite intersecting hypergraph with vertex cover number 3.</p>
+</div>
+<a name="HypergraphMatchings"></a> 
+<h3>Hypergraph Matchings</h3>
+
+<p>
+Ryser's Conjecture states that for any \(r\)-partite \(r\)-uniform 
+hypergraph, the vertex cover number is at most \(r{-}1\) times the matching number. 
+This conjecture is only known to be true for \(r\leq 3\) in general and for \(r\leq 5\) 
+if the hypergraph is intersecting. 
+I am particularly interested in <i>extremal</i> hypergraphs for Ryser's conjecture i.e. \(r\)-partite hypergraphs whose cover number is exactly \(r{-}1\) times the matching number. 
+Despite considerable attention, extremal hypergraphs were known  only  
+for integers \(r\), for which a finite projective plane of order \(r{-}1\) exists, as well as some sporadic values \(r=7,11,13\). 
+</p>
+<p>
+Together with Bar&aacute;t,  Abu-Khazneh, and Szab&oacute;, we produced a new family of \(r\)-uniform hypergraphs extremal to Ryser's
+Conjecture, which exists whenever a projective plane of order \(r-2\) exists. 
+Our construction was flexible enough to produce a large number of non-isomorphic 
+extremal hypergraphs.  
+In particular, we defined what we call the <i>Ryser poset</i> of 
+extremal intersecting \(r\)-partite \(r\)-uniform hypergraphs and showed that it 
+has  exponentially many maximal and minimal elements. 
+This provided further evidence for the difficulty of Ryser's Conjecture.  
+</p>
+
+<p>
+<a href="http://arxiv.org/pdf/1605.06361.pdf"><i>A family of extremal hypergraphs for Ryser's conjecture</i>,
+A. Abu-Khazneh, J. Bar&aacute;t, A. Pokrovskiy, T. Szab&oacute;,
+arXiv:1605.06361
+</a>
+</p>
+<p>
+<a href="http://arxiv.org/pdf/1409.4938.pdf"><i>Intersecting extremal constructions in Ryser's Conjecture for r-partite hypergraphs</i>,
+A. Abu-Khazneh, A. Pokrovskiy,
+arXiv:1608.07028
+</a>
+</p>
+</div>
+
+<div = class="darker">
+<a name="ExtremalCombinatorics"></a> 
+<h3>Extremal combinatorics</h3>
+I am interested in all problems in extremal combinatorics. Below I list some miscellaneous ones I have worked on.
+
+<h3>Edge growth in graph powers</h3>
+<p>
+Motivated by results from Additive Number theory, Hegarty asked how few vertices at distance \(d\) from each other can exist in a regular connected graph.
+Hegarty showed that every regular graph \(G\) satisfies \(e(G^3)\geq \min\left(\binom{|G|}{2}, (1+\epsilon) e(G)\right)\), where 
+\(\epsilon\approx 0.087\).  Here, \(G^3\) denotes the 3rd power of a graph, constructed by joining any two vertices within distance \(3\) by an edge.  I have considered this problem further, looking at higher powers of regular graphs , as well as finding an alternative proof of Hegarty's result with an improved constant of \(\epsilon = \frac{1}{6}\).    
+</p>
+<p>
+There are many open questions in the area&mdash;such as working out bounds on quantity \(e(G^r)\) in terms of the order of \(G\), and the minimal degree of \(G\).  
+One reason for working further on this problem is that it is closely related to some difficult problems about directed graphs.
+A particularly relevant conjecture due to Jackson and Seymour asserts that every Eulerian directed graph without 2-cycles satisfies \(e(G^2)\geq 2e(G)\).
+</p>
+
+<p>
+<a href="http://ajc.maths.uq.edu.au/pdf/58/ajc_v58_p347.pdf"><i>Edge growth in graph powers</i>
+A. Pokrovskiy,
+Australas. J. Combin., 58 (2014), 347&ndash;357.
+</a></p>  
+
+<p>
+<a href="http://www.combinatorics.org/ojs/index.php/eljc/article/view/v18i1p88/pdf"><i>Growth of graph powers</i>
+A. Pokrovskiy,
+Electron. J. Combin., 18 (2011).
+</a></p>
+
+
+
+<hr>
+<h3>Searching using balls</h3>
+<p>
+Together with Kim, Kumbhat, Nagy, Patk&oacute;s, and Vizer, I studied a search problem in graphs. Given a graph \(G\), and some unknown vertex \(v\), you are tasked with finding \(v\) by asking questions of the form "is \(v\) inside the ball of radius \(r\) around \(u\)?" for various \(r\) and \(u\). This could be seen as a simple model of a tracking problem&mdash;the unknown vertex represents someone who we are tracking through a building; the balls of radius \(r\) represent sensors which can detect if the person is close to them or not. When all the balls have radius \(1\), then this is a well-studied area called "identifying codes on graphs". 
+</p>
+<p>
+We studied this search problem on various classes of graphs.   We obtained good bounds for how many balls are needed to find \(v\) when \(G\) is a hypercube, random graph, or a graph with bounded degree.
+</p>
+
+<p>
+<a href="http://www.sciencedirect.com/science/article/pii/S0166218X15001675"><i>Identifying codes and searching with balls in graphs</i>,
+Y. Kim, M. Kumbhat, Z. Nagy, B. Patk&oacutes, A. Pokrovskiy, M. Vizer,
+Discrete Appl. Math., 193 (2015) 39&ndash;47.</a>
+</p>
+
+<hr>
+<h3>Cycles in degree 3-critical graphs</h3>
+ <div class="figure">
+ <img src="TreeToGraph.svg" width=100%;   alt="Turning a binary tree into a graph with 2n-2 edges" >
+ <p>How to use a binary tree with restricted leaf-to-leaf path lengths to obtain  a degree 3-critical graph with restricted cycle lengths.</p>
+</div>
+<p>
+Erd&#x0151;s, Faudree, Gy&aacute;rf&aacute;s, and Schelp studied graphs with \(2n-2\) edges which have no proper induced subgraphs with minimum degree \(3\). Their motivation for studying such graphs was that all graphs with \(e(G) \geq 2n-3\) have a proper induced subgraph with minimum degree \(3\), so it is natural to try to understand the extremal graphs better. 
+Because of this we call a graph with \(2n-2\) edges which have no proper induced subgraphs with minimum degree \(3\)  a <i>degree 3-critical graph</i>.
+These graphs are interesting because they are closely related to some other classes of graphs (such as graphs with arboricity \(2\), or minimally rigid graphs in the plane.) They studied cycles in such graphs and conjectured that every graph with  \(2n-2\) edges which has no proper induced subgraphs with minimum degree \(3\) contains cycles of lengths \(3,4,5,6,\dots, C(n)\), where \(C(n)\) is some increasing function in \(n\). 
+</p>
+<p>
+<b>Conjecture (Erd&#x0151;s, Faudree, Gy&aacute;rf&aacute;s, and Schelp):</b> 
+There is an increasing function \(C(n)\)  such that
+every degree \(3\)-critical graph on \(n\) vertices  
+contains all cycles of lengths \(3, 4, 5, 6, \dots, C(n)\).
+</p>
+<p>
+In this direction they showed that such graphs contain short cycles (specifically \(C_3\), \(C_4\), and \(C_5\)) as well as long cycles (specifically there is a cycle with more than \(\log_2 n\) vertices).
+Together with Narins and Szab&oacute; we disproved this conjecture, by producing graphs satisfying the conditions of the conjecture but with no \(C_{23}\). 
+</p>
+
+<p>
+<b>Theorem (Narins, Pokrovskiy, and Szab&oacute;):</b> 
+There is an infinite sequence of degree \(3\)-critical graphs \((G_n)_{n=1}^{\infty}\) which
+do not contain a cycle of length \(23\).
+</p>
+
+<p>Our construction relies on first reducing the problem to studying possible leaf-to-leaf path lengths in binary trees. This raised the following natural problem "given a binary tree, what can be said about the possible lengths of leaf-to-leaf paths that it must contain?"  Our main result here is that if the tree is sufficiently large, and all its leaves are in the same part of its bipartition, then it always contains leaf-to-leaf paths of lengths \(2,4,6,\dots, 18\), but not necessarily leaf-to-leaf paths of length \(2k\) for any \(k\geq 10\). 
+</p>
+
+<a href="http://arxiv.org/abs/1408.5289"></i>Graphs without proper subgraphs of minimum degree 3 and short cycles</i>,
+L. Narins, A. Pokrovskiy, T. Szab&oacute;,
+Combinatorica, (2016).</a>
+
+</div>
+
+</body>
+</html>

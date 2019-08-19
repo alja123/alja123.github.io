@@ -1,0 +1,52 @@
+
+
+a {
+    font-size: 19px;
+}
+
+
+body
+{
+background-color:#eaffea;
+}
+
+
+
+
+#PublicationsList li a {
+    }
+
+#navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+
+}
+
+#navbar li {
+    float: left;
+}
+
+#navbar li a {
+    font-family: Tahoma, sans-serif;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+/* Change the link color to #111 (black) on hover */
+#navbar li a:hover {
+    background-color: #111;
+}
+}
+
+
