@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Conference talks</title>   
+ <link rel="stylesheet" href="StylePublications.css">
+</head>
+<body>
+
+
+    <ul>
+
+    	<li>
+	<a href="VoronoiPresentation.pdf">Advantage in the discrete Voronoi game</a><br>
+	Joint Free University of Berlin - Tel Aviv University Workshop on Positional Games and Extremal Combinatorics, Tel Aviv, 04/03/2015.
+	</li>  
+
+   	  <li>
+	<a href="LinkingPresentation.pdf">Connectedness in Tournaments</a><br>
+	Polish Combinatorial Conference, Bedlewo, 25/09/2014.
+	</li>  
+
+        <li>
+	<a href="MMSPresentation.pdf">Nonnegative sums in a set of numbers</a><br>
+	Summit 240 Conference, Budapest, 08/07/2014.
+	</li>  
+
+    	<li>
+	<a href="RamseyPresentation.pdf">Calculating Ramsey numbers by partitioning coloured graphs</a><br>
+	Annual Berlin-Pozna\'n Seminar, Hamburg, 23/05/2014.
+	</li>  
+
+   	<li>
+	<a href="CyclesPresentation.pdf">Partitioning 3-coloured complete graphs into three monochromatic paths</a><br>
+	Methods for Discrete Structures, Berlin, 04/11/2013.
+	</li> 
+
+  	<li>
+	<a href="CyclesPresentation.pdf">Covering coloured graphs by paths and cycles</a><br>
+	Cambridge University Combinatorics Group, Cambridge, 18/10/2012.
+	</li>  
+
+
+	<li>
+	<a href="CyclesPresentation.pdf">Covering coloured graphs by paths and cycles</a><br>
+	Eurocomb Conference, Budapest, 29/08/2011.
+	</li>  
+
+	<li>
+	<a href="CyclesPresentation.pdf">Partitioning 3-coloured complete graphs into 3 monochromatic~paths</a><br>
+	Lisboa Combinatorics Conference, Lisbon, 15/07/2011.
+	</li>  
+
+	<li>
+	<a href="">Growth of graph powers</a><br>
+	French Combinatorics Conference, Paris, 28/06/2010.
+	</li>  
+
+	<li>
+	<a href="">Growth of graph powers</a><br>
+	UCL Combinatorics Group, London, 17/11/2010.
+	</li>  
+</ul>
+</body>
+</html>
